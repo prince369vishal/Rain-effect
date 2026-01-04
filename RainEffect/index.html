@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodingIQ | Hundred Hustlers</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="logo">
+          <span class="logo-letter">PV</span>
+          <span class="logo-text">Coding IQ</span>
+        </div>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+          <button class="theme-toggle" aria-label="Toggle theme">
+            <svg
+              class="sun-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg
+              class="moon-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <a href="#login" class="login-btn">Login</a>
+          <a href="#book-call" class="book-call-btn">Book a call</a>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <main class="hero">
+        <h1>
+          <span>Hundred Hustlers.</span> 1.0 <br />100 Coders - One Community.
+        </h1>
+        <p class="subtitle">
+          Making a team of 100 developers who are passionate about learning and
+          building projects.
+        </p>
+        <div class="cta-buttons">
+          <a href="#create-account" class="primary-btn">Create account</a>
+          <a href="#book-call" class="secondary-btn">Book a call</a>
+        </div>
+      </main>
+
+      <!-- Animation Elements -->
+      <div class="moving-line line1"></div>
+      <div class="moving-line line2"></div>
+      <div class="moving-line line3"></div>
+      <div class="moving-line line4"></div>
+      <div class="moving-line line5"></div>
+
+      <div class="explosion explosion1">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+
+      <div class="explosion explosion2">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+
+      <div class="explosion explosion3">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+
+      <div class="explosion explosion4">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+
+      <div class="explosion explosion5">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+    </div>
+    <script>
+      // Theme toggle functionality
+      const themeToggle = document.querySelector(".theme-toggle");
+      const root = document.documentElement;
+
+      // Check for saved theme preference
+      const savedTheme = localStorage.getItem("theme") || "dark";
+      root.setAttribute("data-theme", savedTheme);
+
+      themeToggle.addEventListener("click", () => {
+        const currentTheme = root.getAttribute("data-theme");
+        const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+        root.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+      });
+    </script>
+  </body>
+</html>
